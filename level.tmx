@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="64" tileheight="64" infinite="1" nextlayerid="3" nextobjectid="77">
+ <editorsettings>
+  <export target="level.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tileset" tilewidth="64" tileheight="64" tilecount="54" columns="9">
+  <image source="tileset.png" width="576" height="384"/>
+ </tileset>
+ <tileset firstgid="55" name="enemy" tilewidth="10" tileheight="10" tilecount="1" columns="1">
+  <image source="enemy.png" width="10" height="10"/>
+ </tileset>
+ <objectgroup id="2" name="Object Layer 1">
+  <object id="58" gid="55" x="209.667" y="-17.6667" width="10" height="10"/>
+  <object id="59" gid="55" x="227.667" y="-35" width="10" height="10"/>
+  <object id="60" gid="55" x="240.333" y="-41" width="10" height="10">
+   <properties>
+    <property name="movement">return 
+	function (o) 
+		return o.y % 1000
+	end</property>
+   </properties>
+  </object>
+  <object id="61" gid="55" x="277.667" y="-58.3333" width="10" height="10"/>
+  <object id="62" gid="55" x="300.333" y="-73.6667" width="10" height="10"/>
+  <object id="63" gid="55" x="320.333" y="-85.6667" width="10" height="10"/>
+  <object id="64" gid="55" x="349" y="-101" width="10" height="10"/>
+  <object id="65" gid="55" x="378.333" y="-112.333" width="10" height="10"/>
+  <object id="66" gid="55" x="191.667" y="-7" width="10" height="10"/>
+  <object id="67" gid="55" x="215.667" y="-21" width="10" height="10"/>
+  <object id="68" gid="55" x="227.667" y="-25.6667" width="10" height="10"/>
+  <object id="69" gid="55" x="268.333" y="-51" width="10" height="10"/>
+  <object id="70" gid="55" x="287.667" y="-65" width="10" height="10"/>
+  <object id="71" gid="55" x="301" y="-73" width="10" height="10"/>
+  <object id="72" gid="55" x="318.333" y="-83" width="10" height="10"/>
+  <object id="73" gid="55" x="350.333" y="-94.3333" width="10" height="10"/>
+  <object id="74" gid="55" x="379" y="-108.333" width="10" height="10"/>
+  <object id="75" gid="55" x="404.333" y="-120.333" width="10" height="10"/>
+  <object id="76" gid="55" x="431" y="-133.667" width="10" height="10"/>
+ </objectgroup>
+ <layer id="1" name="Tile Layer 1" width="30" height="20">
+  <data encoding="csv">
+   <chunk x="-16" y="0" width="16" height="16">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,40,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+   <chunk x="0" y="0" width="16" height="16">
+40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+  </data>
+ </layer>
+</map>
