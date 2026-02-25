@@ -1,0 +1,3 @@
+[submodule "lib/sti"]
+	path = lib/sti
+	url = https://github.com/karai17/Simple-Tiled-Implementation
